@@ -1,6 +1,3 @@
-/*
-	
- */
 package main
 
 import (
@@ -8,8 +5,8 @@ import (
 	"time"
 )
 
-func main() {
-	fmt.Println("Hello,World!");
+func hello() {
+	fmt.Println("Hello,World!")
 
-	fmt.Println("The time is ",time.Now());
+	fmt.Println("The time is ", time.Now())
 }

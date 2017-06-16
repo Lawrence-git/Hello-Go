@@ -1,13 +1,10 @@
-/*
-  Math Demo
-*/
 package main
 
 import (
-  "fmt"
-  "math"
+	"fmt"
+	"math"
 )
 
-func main()  {
-  fmt.Println("pi is : ", math.pi)
+func printPi() {
+	fmt.Println("pi is : ", math.Pi)
 }
