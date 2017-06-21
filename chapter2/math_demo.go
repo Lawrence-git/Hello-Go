@@ -20,7 +20,7 @@ const (
 	F
 )
 
-func main() {
+func mathDemo() {
 
 	fmt.Println(A)
 	fmt.Println(B)
