@@ -19,4 +19,6 @@ func goos() {
 	fmt.Printf("The current user is: %s!\n", user)
 	path := os.Getenv("PATH")
 	fmt.Printf("Path is %s\n", path)
+	fmt.Printf("%d \t %s\n", 10, "Hello world")
+	fmt.Println(len("cccc"))
 }

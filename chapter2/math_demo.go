@@ -6,7 +6,27 @@ import (
 	"strconv"
 )
 
+const (
+	// A a
+	A = iota
+	//B b
+	B
+)
+
+const (
+	// E e
+	E = iota
+	// F f
+	F
+)
+
 func main() {
+
+	fmt.Println(A)
+	fmt.Println(B)
+	fmt.Println(E)
+	fmt.Println(F)
+
 	fmt.Println(math.MaxInt8)
 	fmt.Println(math.MinInt16)
 	var a = 65
