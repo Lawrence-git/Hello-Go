@@ -30,14 +30,14 @@ func ifDemo2() {
 	fmt.Println(Abs(-100))
 	fmt.Println(isGreaterThan10(10))
 
-	var cond int = 0
+	// var cond int = 0
 	//此处 := 初始化的cond是一个只存在于 if-else 分支内的局部变量
 	if cond := 15; cond > 10 {
 		fmt.Printf("cond is greater than 10\n")
 	} else {
 		fmt.Printf("cond is not greater than 10\n")
 	}
-	fmt.Printf("cond is %d\n", cond)
+	// fmt.Printf("cond is %d\n", cond)
 }
 
 // Abs 获取x的绝对值
