@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"strconv"
 )
 
-func main() {
+func errorHandler() {
 	if aInt, err1 := strconv.Atoi("qwq"); err1 != nil {
 		fmt.Printf("An error occured!%s\n", err1.Error())
 	} else {
@@ -30,6 +31,12 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Println("The flag is : ", flag)
+
+	fmt.Println("================ Cutting Line =================")
+
+	if t, ok := mySqrt(25.0); ok {
+		fmt.Println("t:", t)
+	}
 }
 
 func openFile(fileName string) (flag bool, err error) {
@@ -42,4 +49,11 @@ func openFile(fileName string) (flag bool, err error) {
 		return false, err
 	}
 	return true, nil
+}
+
+func mySqrt(f float64) (v float64, ok bool) {
+	if f < 0 {
+		return
+	}
+	return math.Sqrt(f), true
 }
