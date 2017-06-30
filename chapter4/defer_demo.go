@@ -1,11 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func deferDemo() {
+	start := time.Now()
 	getConnection()
 	defer closeConnection()
 	operateDBData()
+	end := time.Now()
+	// var temp = 0
+	// for i := 0; i < 100000; i++ {
+	// 	for j := 0; j < 100000; j++ {
+	// 		temp = temp + 1
+	// 	}
+	// }
+	fmt.Println(end.Sub(start))
 }
 
 func getConnection() {

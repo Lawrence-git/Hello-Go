@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main() {
+func parameterDemo() {
 	// result := callFunc(2, add)
 	// fmt.Println("In main,result : ", result)
 
