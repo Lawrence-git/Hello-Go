@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func deferTrace() {
 	b()
 }
 
@@ -11,17 +11,17 @@ func trace(s string) string {
 	return s
 }
 
-func un(s string) {
+func untrace(s string) {
 	fmt.Println("leaving:", s)
 }
 
 func a() {
-	defer un(trace("a"))
+	defer untrace(trace("a"))
 	fmt.Println("in a")
 }
 
 func b() {
-	defer un(trace("b"))
+	defer untrace(trace("b"))
 	fmt.Println("in b")
 	a()
 }
