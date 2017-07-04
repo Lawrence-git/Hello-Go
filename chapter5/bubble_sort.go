@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func bubbleSortDemo() {
 	a := [...]int{5, 2, 6, 3, 9}
 	fmt.Println(a)
 

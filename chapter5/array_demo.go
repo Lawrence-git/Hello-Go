@@ -5,6 +5,9 @@ import (
 )
 
 func arrayDemo() {
+	var arr1 [5]int
+	fmt.Println(arr1)
+
 	a := [5]int{1, 2}
 	fmt.Println(a)
 
