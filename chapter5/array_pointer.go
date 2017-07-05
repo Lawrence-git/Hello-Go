@@ -6,7 +6,7 @@ import (
 
 //go语言中数组是一种值类型,所以数组不能直接作为参数传入函数
 //如果想在函数中对数组进行修改，可以将数组的地址作为参数传入
-func main() {
+func arrayPointer() {
 	arr1 := [...]int{0, 5, 10, 15}
 	fmt.Println(arr1)
 	arr2 := arr1
