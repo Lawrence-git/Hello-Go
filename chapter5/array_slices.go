@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func sliceDemo2() {
+func arraySliceDemo2() {
 	var arr1 [6]int
 	var slice1 = arr1[3:5] // index 5 niet meegerekend!
 
