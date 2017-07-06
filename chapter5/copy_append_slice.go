@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func copyAppend() {
 	slFrom := []int{1, 2, 3}
 	slTo := make([]int, 10)
 

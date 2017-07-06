@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func resliceDemo() {
 	// reslice(
 	reslice2()
 }
