@@ -23,7 +23,7 @@ func addNext(tree *binaryTree, value int) binaryTree {
 	return *binaryTree1
 }
 
-func main() {
+func structsBinaryTree() {
 	binaryTree1 := new(binaryTree)
 	binaryTree1.value = 10
 	pre := addPre(binaryTree1, 9)
