@@ -8,14 +8,14 @@ import (
 )
 
 func main() {
-	person := custom.Person{"Xia", 11, "HangZhou"}
+	person := new(custom.Person)
+	person.SetName("Xia")
+	person.SetAge(23)
+	person.SetAddress("HangZhou")
 	fmt.Printf("%v\n", person)
+	fmt.Printf("The name is %s. The age is %d. The address is %s",
+		person.GetName(), person.GetAge(), person.GetAddress())
 
-	fmt.Println("===========================")
-
-	for i := 0; i < 3; i++ {
-		refPerson(person, i)
-	}
 }
 
 func refPerson(person custom.Person, index int) {

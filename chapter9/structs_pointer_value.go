@@ -15,7 +15,7 @@ func (b *B) changePointer() { b.thing = 1 }
 
 func (b B) write() string { return fmt.Sprint(b) }
 
-func main() {
+func structsPointerValue() {
 	var b1 B
 	b1.changeValue()
 	fmt.Println(b1.write())
