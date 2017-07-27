@@ -13,7 +13,13 @@ func (stu *Student) String() string {
 	return "The student " + stu.name + " sno is " + stu.studentSno + "."
 }
 
-func main() {
+type TT float64
+
+func (t TT) String() string {
+	return fmt.Sprintf("%v", t)
+}
+
+func structsString() {
 	s := Student{"2012551435", "xia"}
 	//因为是实例，所以没有调用String()方法
 	fmt.Println(s)
@@ -21,4 +27,8 @@ func main() {
 	fmt.Println(&s)
 	//显示调用
 	fmt.Println(s.String())
+	fmt.Sprintf()
+
+	t := TT{3.32}
+	fmt.Println(t)
 }
