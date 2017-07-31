@@ -16,7 +16,7 @@ func (node *Node) SetData(data interface{}) {
 	node.data = data
 }
 
-func main() {
+func NodeStructs() {
 	root := NewNode(nil, nil)
 	root.SetData("root node")
 	// make child (leaf) nodes:
