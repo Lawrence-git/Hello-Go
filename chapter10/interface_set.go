@@ -32,7 +32,7 @@ func LongEnough(l Lener) bool {
 	return l.Len()*10 > 42
 }
 
-func main() {
+func interfaceSet() {
 	// A bare value
 	var lst List
 	// CountInto(lst, 1, 10)
