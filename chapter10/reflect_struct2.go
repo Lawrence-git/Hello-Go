@@ -10,7 +10,7 @@ type T struct {
 	B string
 }
 
-func main() {
+func reflectStruct2() {
 	t := T{23, "skidoo"}
 	s := reflect.ValueOf(&t).Elem()
 	typeOfT := s.Type()
