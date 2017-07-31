@@ -4,8 +4,9 @@ import (
 	"fmt"
 )
 
-func switchDemo() {
-	fallthroughDemo()
+func main() {
+	// fallthroughDemo()
+	switchInt(3)
 }
 
 //go语言接受任意类型的switch变量
