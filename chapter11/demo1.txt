@@ -1,3 +1,3 @@
-func Fscanf
-func Fscanf(r io.Reader, format string, a ...interface{}) (n int, err error)
-Fscanf从r扫描文本，根据format 参数指定的格式将成功读取的空白分隔的值保存进成功传递给本函数的参数。返回成功扫描的条目个数和遇到的任何错误。
+ABC 40 150
+FUNC 56 280
+GO 45 356

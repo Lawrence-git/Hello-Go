@@ -3,12 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"io"
 	"os"
 )
 
 func fileinput1() {
-	file, err := os.Open("readinput11.go")
+	file, err := os.Open("demo1.txt")
 	if err != nil {
 		fmt.Println("Something error is happened!")
 		fmt.Println(err.Error())
@@ -17,15 +16,14 @@ func fileinput1() {
 	defer file.Close()
 
 	inputReader := bufio.NewReader(file)
+	buf := make([]byte, 256)
+	var str string = ""
 	for {
-		inputString, readerError := inputReader.ReadString('\n')
-		if readerError != nil {
-			if readerError == io.EOF {
-				return
-			} else {
-				fmt.Println("Something error is happened when reading file!")
-			}
+		n, _ := inputReader.Read(buf)
+		str = str + string(buf)
+		if n == 0 {
+			break
 		}
-		fmt.Println(inputString)
 	}
+	fmt.Printf(str)
 }

@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func fileinput2() {
 	inputFile := "demo1.txt"
 	outputFile := "demo2.txt"
 	buf, err1 := ioutil.ReadFile(inputFile)
