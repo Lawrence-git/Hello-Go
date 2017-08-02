@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func main() {
+func fileinput3() {
 	file, err := os.Open("demo1.txt")
 	if err != nil {
 		panic(err)
