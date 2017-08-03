@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func ioInterface() {
 	fmt.Fprintf(os.Stdout, "My name is %s,age is %d!\n", "Xia", 23)
 
 	//缓冲区输出
