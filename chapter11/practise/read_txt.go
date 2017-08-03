@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func readTxtDemo() {
 	file, error := os.Open("products.txt")
 	if error != nil {
 		panic(error)
