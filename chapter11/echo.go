@@ -12,7 +12,7 @@ const (
 	Newline = "\n"
 )
 
-func main() {
+func echoDemo() {
 	flag.PrintDefaults()
 	flag.Parse()
 	var s string
