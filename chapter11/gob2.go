@@ -24,7 +24,7 @@ type VCard struct {
 
 var content string
 
-func main() {
+func gob2() {
 	pa := &Address{"private", "Aartselaar", "Belgium"}
 	wa := &Address{"work", "Boom", "Belgium"}
 	vc := VCard{"Jan", "Kersschot", []*Address{pa, wa}, "none"}
