@@ -6,7 +6,7 @@ import (
 )
 
 //buf(async):1038241  //sync:684632
-func main() {
+func channelBlockBuf() {
 	ch := make(chan string)
 	go sendData(ch)
 	go getData(ch)
