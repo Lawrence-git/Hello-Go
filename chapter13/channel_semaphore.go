@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func channelSemaphore() {
 	ch := make(chan string)
 	go doPrint1(ch)
 	go doPrint1(ch)

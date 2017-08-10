@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func goroutine2() {
 	//定义channel
 	// var ch1 chan string
 	// ch1 = make(chan string)
