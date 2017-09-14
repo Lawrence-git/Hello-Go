@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func dup2Main() {
 	counts := make(map[string]int)
 	files := os.Args[1:]
 	if len(files) == 0 {
