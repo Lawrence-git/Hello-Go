@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func echo2Demo() {
+func echo2Main() {
 	start := time.Now()
 	var commandArgs []string
 	for _, v := range os.Args[1:] {

@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func main() {
+func dup1Main() {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
 	for input.Scan() {
